@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { Mic, MicOff, Upload, Volume2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { SoundWaves } from './SoundWaves';
 
 interface VoiceRecorderProps {
   onRecordingComplete?: (audioBlob: Blob) => void;
@@ -85,6 +86,9 @@ export const VoiceRecorder = ({ onRecordingComplete, onFileUpload }: VoiceRecord
             {isRecording ? 'Stop Recording' : 'Start Recording'}
           </Button>
         </div>
+
+        {/* Sound Waves Animation */}
+        <SoundWaves isActive={isRecording} />
 
         <div className="space-y-2">
           <h3 className="text-lg font-semibold text-primary-foreground">
