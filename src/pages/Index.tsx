@@ -43,8 +43,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-purple-800 opacity-90" />
+      {/* Background gradient - Updated to black to gray */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-700 opacity-95" />
       
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
